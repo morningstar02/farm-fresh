@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" id="navbar" style="min-height: 80px !important;">
+    <div fxHide.gt-xs>
+      <button mat-icon-button (click) = "onToggleSidenav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="space-between end">
+        <div style="margin-top: 4px;padding-top: 50px;">
+            <a routerLink="/">
+              <div class="header">
+                <img src="../../../assets/img/farm_fresh.png" alt="logo" />
+              </div>
+            </a>
+        </div>
+        
+        <div class="container" [fxHide.xs]="true">
+          <ul>
+            <li><a mat-button  [routerLink]="['/']">HOME</a></li>
+            <li><a mat-button  [routerLink]="['/about']">ABOUT US</a></li>
+            <li><a mat-button  [routerLink]="['/ourservices']">OUR SERVICES</a></li>
+            <li><a mat-button  [routerLink]="['/contactus']">CONTACT</a></li>
+          </ul>
+        </div>
+        
+    </div>
+</mat-toolbar>

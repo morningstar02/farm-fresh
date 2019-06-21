@@ -1,0 +1,23 @@
+.tp-card {
+    max-width: 250px;
+    background-color: transparent;
+ }
+ .tp-header-image1 {
+    background-image: url('https://randomuser.me/api/portraits/women/81.jpg');
+    background-size: cover;
+ }
+
+ .tp-header-image2 {
+    background-image: url('https://randomuser.me/api/portraits/men/57.jpg');
+    background-size: cover;
+ }
+
+ .tp-header-image3 {
+    background-image: url('https://randomuser.me/api/portraits/women/74.jpg');
+    background-size: cover;
+ }
+
+ .tp-header-image4 {
+    background-image: url('https://randomuser.me/api/portraits/lego/0.jpg');
+    background-size: cover;
+ }

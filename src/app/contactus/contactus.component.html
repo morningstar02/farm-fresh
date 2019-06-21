@@ -1,0 +1,36 @@
+
+<div class="background"></div>
+
+<p class="mat-display-1" style="margin-left: 20px; margin-top: 20px;">
+  Tell us what you need to know.
+</p>
+
+<form  #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" autocomplete="off">
+    <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="space-around start">
+        <div class="item">
+            <div fxLayout="column wrap" fxLayoutGap="32px" style="align-items: center;">
+                <mat-form-field>
+                    <input matInput placeholder="Name">
+                  </mat-form-field>
+                
+                  <mat-form-field>
+                      <input matInput placeholder="Email">
+                    </mat-form-field>
+                  <mat-form-field>
+                    <textarea matInput placeholder="Subject"></textarea>
+                  </mat-form-field>
+                
+                
+              <button type="submit" mat-raised-button color="primary">
+                  Submit
+              </button>
+            </div>    
+        </div>  
+      
+        <div class="item">
+            <img src="../../assets/img/mail_box.svg" style="max-height: 360px;">
+        </div>
+    </div>  
+  
+    
+</form>
